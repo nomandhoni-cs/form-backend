@@ -1,5 +1,7 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
+app.use(cors());
 const db = require("./connection");
 const Post = require("./postMode");
 app.use(express.urlencoded({ extended: true }));
